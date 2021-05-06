@@ -1,0 +1,14 @@
+# created by virtualenv automatically
+com/beiwei/flask/debug.log
+**/.DS_Store
+**/*.pyc
+**/debug.log
+**/__pycache__
+**/logs
+**/build
+**/dist
+**/venv
+**/py_es_poof.egg-info/
+**/*.v2
+**/*.gz
+**/*.pb
