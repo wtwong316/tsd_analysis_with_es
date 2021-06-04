@@ -11,4 +11,5 @@ pandas
 sklearn
 h5py
 scipy
+statsmodels
 

@@ -1,6 +1,9 @@
 from flask import Flask
 from flask_restplus import Api
 from com.beiwei.flask.hl_rest_client import name_space_hl
+from com.beiwei.flask.tsd_stationarity import name_space_tsd_stationarity
+from com.beiwei.flask.tsd_eemd import name_space_tsd_eemd
+from com.beiwei.flask.indicators import name_space_indicators
 from logging.handlers import RotatingFileHandler
 import logging
 
@@ -12,6 +15,9 @@ flask_app.config.SWAGGER_SUPPORTED_SUBMIT_METHODS = ["get", "post"]
 
 api = Api(flask_app)
 api.add_namespace(name_space_hl)
+api.add_namespace(name_space_tsd_stationarity)
+api.add_namespace(name_space_tsd_eemd)
+api.add_namespace(name_space_indicators)
 
 flask_app.logger.info('Info level log')
 flask_app.logger.warning('Warning level log')

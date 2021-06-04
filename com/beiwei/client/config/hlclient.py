@@ -12,7 +12,7 @@ class HLClient:
             with HLClient.__conn_lock:
                 if HLClient.__conn is None:
                     HLClient.__conn = \
-                        connections.create_connection('hlclient', hosts=['192.168.1.214'], port=9200)
+                        connections.create_connection('hlclient', hosts=['192.168.1.214'], port=19200)
         return HLClient.__conn
 
     def __init__(self):

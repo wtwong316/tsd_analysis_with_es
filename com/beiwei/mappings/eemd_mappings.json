@@ -1,0 +1,58 @@
+{
+	"mappings" : {
+    	"dynamic": false,
+        "properties": {
+          "ts_code": {
+            "type": "keyword"
+          },
+          "end_date": {
+            "type": "date",
+            "format": "yyyyMMdd"
+          },
+          "adj_nav": {
+            "type": "double"
+          },
+          "imf0": {
+            "type": "double"
+          },
+          "imf1": {
+            "type": "double"
+          },
+          "imf2": {
+            "type": "double"
+          },
+          "imf3": {
+            "type": "double"
+          },
+          "imf4": {
+            "type": "double"
+          },
+          "imf5": {
+            "type": "double"
+          },
+          "imf6": {
+            "type": "double"
+          },
+          "imf7": {
+            "type": "double"
+          },
+          "imf8": {
+            "type": "double"
+          },
+          "imf9": {
+            "type": "double"
+          },
+          "imf10": {
+            "type": "double"
+          },
+          "imf11": {
+            "type": "double"
+          }
+        }
+	}
+	,
+	"settings":{
+		"index.number_of_shards": 4,
+		"index.number_of_replicas": 1
+	}
+}
