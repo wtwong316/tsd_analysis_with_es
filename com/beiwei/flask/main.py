@@ -19,9 +19,11 @@ api.add_namespace(name_space_tsd_stationarity)
 api.add_namespace(name_space_tsd_eemd)
 api.add_namespace(name_space_indicators)
 
+
 flask_app.logger.info('Info level log')
 flask_app.logger.warning('Warning level log')
 flask_app.logger.error('An error occurred')
+
 
 def get_api():
     return api
